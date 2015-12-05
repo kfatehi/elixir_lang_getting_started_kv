@@ -5,6 +5,12 @@ defmodule KV.Registry do
 
   @doc """
   Starts the registry
+
+  ## Examples
+
+    iex> {:ok, registry} = KV.Registry.start_link
+    ...> Process.alive?(registry)
+    true
   """
   def start_link(opts \\ []) do
     GenServer.start_link(__MODULE__, :ok, opts)
