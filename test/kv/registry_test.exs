@@ -20,7 +20,7 @@ defmodule KV.RegistryTest do
   test "can be stopped", %{registry: registry} do
     assert Process.alive?(registry)
     :ok = KV.Registry.stop(registry)
-    assert not Process.alive?(registry)
+    refute Process.alive?(registry)
   end
 
   test "removes buckets on exit", %{registry: registry} do
