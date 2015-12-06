@@ -1,5 +1,9 @@
 # KV
 
+learning elixir through the getting started guides.
+
+current position: http://elixir-lang.org/getting-started/mix-otp/genevent.html
+
 **TODO: Add description**
 
 ## Installation
